@@ -1,0 +1,114 @@
+body  {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfdfd3;
+}
+
+h1  {
+    color: #000000;
+}
+
+.navbar {
+    text-align: center;
+    background-color: #333; /* สีพื้นหลังของ Navbar */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* เพิ่มสีพื้นหลังเมื่อนำเมาส์ไป Hover */
+    color: black;
+}
+.content {
+    padding: 20px;
+}
+
+.main-image {
+    width: 0%; /* ทำให้รูปภาพเต็มขนาดของพื้นที่ที่ถูกครอบหน้าจอ */
+    height: 100ex; /* ทำให้รูปภาพปรับสัดส่วน */
+}
+
+table {
+    margin: 50px auto; /* ระยะห่างของตารางจากขอบข้าง */
+    border-collapse: collapse;
+    width: 60%; /* ขนาดของตาราง */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* เส้นขอบของตาราง */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333; /* สีพื้นหลังของหัวข้อ */
+    color: white; /* สีข้อความในหัวข้อ */
+}
+
+nav {
+    background-color: #333; /* สีพื้นหลังของ Navbar */
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px; /* เพิ่มมุมขอบของลิงค์ */
+}table {
+    margin: 50px auto;
+    border-collapse: collapse;
+    width: 60%;
+    border: 2px solid #333; /* เพิ่มกรอบให้กับตาราง */
+    border-radius: 10px; /* เพิ่มมุมขอบของตาราง */
+}
+
+table, th, td {
+    border: 1px solid hsl(0, 0%, 0%);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    border: 1px solid #333; /* เพิ่มกรอบให้กับหัวข้อ */
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid white; /* เพิ่มเส้นบนให้กับ Navbar */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+
+nav a:hover {
+    background-color: #ddd; /* สีพื้นหลังเมื่อ Hover ที่ลิงค์ */
+    color: black;
+}
