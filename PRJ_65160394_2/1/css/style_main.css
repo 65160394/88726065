@@ -1,0 +1,145 @@
+body {
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://travel.mthai.com/app/uploads/2016/12/bongpiang101.jpg');
+    /* รูปภาพพื้นหลังเริ่มต้น */
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    transition: background-image 1s ease;
+    /* ใช้ transition เพื่อทำให้เกิดการเปลี่ยนแปลงสามารถเห็นได้ */
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('https://wp-assets.dotproperty-kh.com/wp-content/uploads/sites/9/2016/11/08162826/DSC_0854.jpg');
+    }
+    25% {
+        background-image: url('https://www.ktc.co.th/pub/media/Travel-Story/Thailand/bangsaen/bangsaen-beach.webp');
+    }
+    50% {
+        background-image: url('https://travel.mthai.com/app/uploads/2016/12/bongpiang101.jpg');
+    }
+    100% {
+        background-image: url('https://www.agoda.com/wp-content/uploads/2022/12/Chantaboon-Waterfront-Chantaburi-Things-to-do-in-East-Thailand.jpg');
+    }
+}
+
+.change-on-load {
+    animation: changeBackground 10s infinite;
+}
+
+header {
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    background: linear-gradient(90deg, #000000, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main h2 {
+    background: linear-gradient(90deg, #F8FAE5, #f9cf00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main p {
+    background: linear-gradient(90deg, #F8FAE5, #f9cf00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f5af40;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* Slideshow Container */
+#slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Slideshow Images */
+#slideshow-container img {
+    width: 100%;
+    height: min-content;
+    border-radius: 10px;
+}
+
+/* Slideshow Text */
+#slideshow-container .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.300);
+    color: #F8FAE5;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Slideshow Navigation Buttons */
+#prev,
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f5af40;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    z-index: 1000;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
